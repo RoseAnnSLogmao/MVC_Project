@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+
+<div class="card mx-auto mt-5" style="width: 30rem;">
+  <div class="card-body">
+    <h4 class="card-title text-center mb-4">Login</h4>
+    <form>
+      <div class="mb-3">
+        <label for="loginEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="loginPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+      </div>
+
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="rememberMe">
+        <label class="form-check-label" for="rememberMe">Remember me</label>
+      </div>
+
+      <div class="d-grid mb-3">
+        <button type="submit" class="btn btn-success">Login</button>
+      </div>
+
+      <div class="text-center">
+        <small>Don't have an account yet? <a href="Register">Sign up here</a>.</small>
+      </div>
+    </form>
+  </div>
+</div>
