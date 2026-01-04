@@ -39,6 +39,16 @@ button.accept-policy {
   line-height: inherit;
 }
 
+.pin-grid {
+    column-count: 4;
+    column-gap: 15px;
+}
+
+.pin {
+    break-inside: avoid;
+    margin-bottom: 15px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;

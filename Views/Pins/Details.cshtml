@@ -1,0 +1,14 @@
+@model Pin
+
+@{
+    ViewData["Title"] = "Pin Details";
+}
+
+<h2>@Model.Title</h2>
+
+<img src="@Model.ImageUrl" style="max-width:300px;" />
+
+<p>@Model.Description</p>
+
+<a href="/Home/Index">Back to Home</a>
+    

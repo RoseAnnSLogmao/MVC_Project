@@ -8,7 +8,13 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        return View();
+        var pins = new List<Pin>
+    {
+        new Pin { Id = 1, Title = "Nature", ImageUrl = "/images/nature.jpg", Description = "Green vibes" },
+        new Pin { Id = 2, Title = "Art", ImageUrl = "/images/art.jpg", Description = "Creative mood" }
+    };
+
+    return View(pins);
     }
 
     public IActionResult Privacy()
